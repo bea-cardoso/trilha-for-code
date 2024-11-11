@@ -8,6 +8,13 @@ m = 0  #derrotas
 
 while n < 3 and m < 3:    # Assim que n ou m atinge 3, a condição proposta se torna falsa, o que faz com que o loop pare.
   player1 = input ("Escolha entre pedra, papel ou tesoura: ")
+
+  #verificar se a respsota é valida
+  while player1 not in ["pedra", "tesoura", "papel"]:
+    print("Escolha inválida! Escolher entre pedra, papel ou tesoura.")
+    player1 = input("Escolha entre pedra, papel ou tesoura: ")
+
+  
  
   lista1 = ["pedra", "papel", "tesoura"]
  
