@@ -1,5 +1,6 @@
 import random
 
+#função da escolha do player1
 def escolha_do_player1():
     player1 = input("Escolha entre pedra, papel ou tesoura: ")
     
@@ -9,18 +10,20 @@ def escolha_do_player1():
     
     return player1
 
-#escolha do computador
+#função da escolha do computador
 def escolha_do_player2():
    player2 = random.choice(["pedra", "papel", "tesoura"])
    print("Eu escolho: " + player2)
    return player2
 
+#função do jogo
 def jogando():   
-#variaveis de vitoria e derrota do player1
+
+    #variaveis de vitoria e derrota do player1
     n = 0  #vitórias
     m = 0  #derrotas
 
-#loop até que o player1 tenha 3 vitorias ou 3 derrotas
+    #loop até que o player1 tenha 3 vitorias ou 3 derrotas
     while n < 3 and m < 3:
         player1 = escolha_do_player1() # chamar uma função para executá-la e obter o resultado, 
                                        #precisa colocar os parênteses ().
